@@ -60,10 +60,10 @@ footer p{
     }
     article{
         display: grid;
-		grid-template-areas: "header header"
-                        "leftcol rightcol"
+		grid-template-areas: "header header header"
+                        "leftcol centercol rightcol "
                         "footer footer";
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto 1fr auto;
     gap: 10px;
     }
@@ -74,9 +74,9 @@ footer p{
         grid-area: leftcol;
     }
     .nm2{
-        grid-area: rightcol;
+        grid-area: centercol;
     }
     .nm3{
-        grid-area: footer;
+        grid-area: rightcol;
     }
 }
