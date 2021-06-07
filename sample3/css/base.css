@@ -36,13 +36,41 @@ header{
     background-color: #AED581;
     padding: 10px 2em;
 }
-.nm3{
-    background-color:#8BC34A ;
-}
+
 footer{
     background-color: #4DD0E1;
 }
 footer p{
     padding: 10px;
     text-align: center;
+}
+@media screen and (min-width: 768px){
+    #wrap{
+        width: 90%;
+        max-width: 1280px;
+        margin: 0 auto;
+    }
+    .gnav ul{
+        display: flex;
+    }
+    .gnav li{
+        box-sizing: border-box;
+        width: 25%;
+    }
+    article{
+        display: grid;
+        grid-template-areas: "header header" "leftcol rightcol";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 10px;
+    }
+    article{
+        grid-area: header;
+    }
+    .nm1{
+        grid-area: leftcol;
+    }
+    .nm2{
+        grid-area: rightcol;
+    }
 }
