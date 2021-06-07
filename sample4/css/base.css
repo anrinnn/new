@@ -8,11 +8,17 @@ html{
 	16×62.5% = 10 */
 }
 body{
-    color: #333333;
+    background-color: #4DD0E1;
+    color:#333;
     font-family:-apple-system, BlinkMacSystemFont, "Helvetica Neue", "Noto Sans Japanese","ヒラギノ角ゴ ProN W3", Meiryo, sans-serif;
     font-size: 1.6rem;
+    margin: 0;
+    padding: 0;
 }
-
+h1,h2,h3,
+footer p{
+    margin: 0;
+}
 
 header{
     background-color: #64B5F6;
@@ -49,3 +55,18 @@ footer p{
     padding: 10px;
     text-align: center;
 }
+@media screen and (min-width: 768px) {
+    .inner,article,footer p{
+        width: 90%;
+        max-width: 1280px;
+        margin: 0 auto;
+}
+article{
+    display: grid;
+    grid-template-areas: "header header" "maincol maincol" "leftcol rightcol";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    gap: 10px;
+    }
+}
+.
